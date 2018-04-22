@@ -1,0 +1,9 @@
+Hi,
+Hello,
+Good morning,
+Good evening,
+Bye,
+Good Bye,
+Have a nice day,
+Light up,
+Ligh down

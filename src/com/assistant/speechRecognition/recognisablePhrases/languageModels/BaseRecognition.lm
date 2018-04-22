@@ -1,0 +1,79 @@
+Language model created by QuickLM on Sun Apr 22 12:29:40 EDT 2018
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 9 sentences and 16 words
+
+\data\
+ngram 1=16
+ngram 2=23
+ngram 3=17
+
+\1-grams:
+-0.8909 </s> -0.3010
+-0.8909 <s> -0.2341
+-1.8451 A -0.2948
+-1.5441 BYE, -0.2413
+-1.8451 DAY, -0.2413
+-1.8451 DOWN -0.2413
+-1.8451 EVENING, -0.2413
+-1.3680 GOOD -0.2755
+-1.8451 HAVE -0.2948
+-1.8451 HELLO, -0.2413
+-1.8451 HI, -0.2413
+-1.8451 LIGH -0.2948
+-1.8451 LIGHT -0.2948
+-1.8451 MORNING, -0.2413
+-1.8451 NICE -0.2948
+-1.8451 UP, -0.2413
+
+\2-grams:
+-1.2553 <s> BYE, 0.0000
+-0.7782 <s> GOOD 0.0000
+-1.2553 <s> HAVE 0.0000
+-1.2553 <s> HELLO, 0.0000
+-1.2553 <s> HI, 0.0000
+-1.2553 <s> LIGH 0.0000
+-1.2553 <s> LIGHT 0.0000
+-0.3010 A NICE 0.0000
+-0.3010 BYE, </s> -0.3010
+-0.3010 DAY, </s> -0.3010
+-0.3010 DOWN </s> -0.3010
+-0.3010 EVENING, </s> -0.3010
+-0.7782 GOOD BYE, 0.0000
+-0.7782 GOOD EVENING, 0.0000
+-0.7782 GOOD MORNING, 0.0000
+-0.3010 HAVE A 0.0000
+-0.3010 HELLO, </s> -0.3010
+-0.3010 HI, </s> -0.3010
+-0.3010 LIGH DOWN 0.0000
+-0.3010 LIGHT UP, 0.0000
+-0.3010 MORNING, </s> -0.3010
+-0.3010 NICE DAY, 0.0000
+-0.3010 UP, </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BYE, </s>
+-0.7782 <s> GOOD BYE,
+-0.7782 <s> GOOD EVENING,
+-0.7782 <s> GOOD MORNING,
+-0.3010 <s> HAVE A
+-0.3010 <s> HELLO, </s>
+-0.3010 <s> HI, </s>
+-0.3010 <s> LIGH DOWN
+-0.3010 <s> LIGHT UP,
+-0.3010 A NICE DAY,
+-0.3010 GOOD BYE, </s>
+-0.3010 GOOD EVENING, </s>
+-0.3010 GOOD MORNING, </s>
+-0.3010 HAVE A NICE
+-0.3010 LIGH DOWN </s>
+-0.3010 LIGHT UP, </s>
+-0.3010 NICE DAY, </s>
+
+\end\
