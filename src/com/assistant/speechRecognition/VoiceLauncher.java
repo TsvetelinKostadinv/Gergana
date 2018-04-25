@@ -6,7 +6,6 @@ import edu.cmu.sphinx.api.SpeechResult;
 import java.io.IOException;
 
 /**
- *
  * @author ex094
  */
 public class VoiceLauncher {
@@ -18,9 +17,15 @@ public class VoiceLauncher {
         // Set path to the acoustic model.
         configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
         // Set path to the dictionary.
-        configuration.setDictionaryPath("src/com/assistant/speechRecognition/recognisablePhrases/dictionaries/BaseRecognition.dic");
+        configuration.setDictionaryPath("src/com/assistant/"
+        		+ "speechRecognition/"
+        		+ "recognisablePhrases/dictionaries/BaseRecognition.dic");
         // Set path to the language model.
-        configuration.setLanguageModelPath("src/com/assistant/speechRecognition/recognisablePhrases/languageModels/BaseRecognition.lm");
+        configuration.setLanguageModelPath("src/com/assistant/"
+        		+ "speechRecognition/"
+        		+ "recognisablePhrases/languageModels/BaseRecognition.lm");
+        
+        
         
         //Recognizer Object, Pass the Configuration object
         LiveSpeechRecognizer recognize = new LiveSpeechRecognizer(configuration);
