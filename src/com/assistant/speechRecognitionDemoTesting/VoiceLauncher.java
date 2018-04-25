@@ -1,4 +1,4 @@
-package com.assistant.speechRecognition;
+package com.assistant.speechRecognitionDemoTesting;
 //Imports
 import edu.cmu.sphinx.api.Configuration;
 import edu.cmu.sphinx.api.LiveSpeechRecognizer;
