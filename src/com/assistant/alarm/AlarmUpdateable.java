@@ -2,7 +2,6 @@ package com.assistant.alarm;
 
 import java.time.LocalDateTime;
 
-import com.assistant.updater.UpdateManager;
 import com.assistant.updater.Updateable;
 
 public class AlarmUpdateable extends Updateable{

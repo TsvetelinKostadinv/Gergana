@@ -29,17 +29,21 @@ public class Updater implements UpdateManager {
 	@Override
 	public void updateAll() 
 	{
+		System.out.println("Updating...");
 		Integer currDelay = null;
 		Updateable currUpd = null;
 		for(int i=0;i<updateables.size();i++)
 		{
 			currDelay = delays.get(i);
 			currUpd = updateables.get(i);
-			if(delays.get(i)>= currUpd.getUpdateInterval())
+			if(delays.get(i) >= currUpd.getUpdateInterval())
 			{
+				System.out.println("Updated it");
 				currUpd.update();
+				currDelay=0;
+			}else {
+				currDelay = currDelay+1;
 			}
-			currDelay = currDelay+1;
 			delays.set(i, currDelay);
 		}
 	}
