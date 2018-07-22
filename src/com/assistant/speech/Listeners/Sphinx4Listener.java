@@ -7,26 +7,33 @@ import edu.cmu.sphinx.api.LiveSpeechRecognizer;
 import edu.cmu.sphinx.api.SpeechResult;
 
 public class Sphinx4Listener implements Listener {
+	
 	Configuration configuration;
+	
 	private String acousticModelPath = "resource:/edu/cmu/sphinx/models/en-us/en-us";
+	private String dictionaryPath;
+	private String languageModel;
 	
 	public Sphinx4Listener(String dictionaryPath, String languageModel)
 	{
-		// Configuration Object
-		configuration = new Configuration();
-
+		this.configuration = new Configuration();
+		this.dictionaryPath = dictionaryPath;
+		this.languageModel = languageModel;
+		
+		
         // Set path to the acoustic model.
-        configuration.setAcousticModelPath(acousticModelPath);
+        configuration.setAcousticModelPath(this.acousticModelPath);
         // Set path to the dictionary.
-        configuration.setDictionaryPath(dictionaryPath);
+        configuration.setDictionaryPath(this.dictionaryPath);
         // Set path to the language model.
-        configuration.setLanguageModelPath(languageModel);
+        configuration.setLanguageModelPath(this.languageModel);
 	}
 	
 	@Override
-	public String listen() {
+	public String listenForASinglePhrase() {
 		
         LiveSpeechRecognizer recognizer = null;
+        
 		try {
 			recognizer = new LiveSpeechRecognizer(configuration);
 		} catch (IOException e) {

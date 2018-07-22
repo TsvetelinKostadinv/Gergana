@@ -2,5 +2,5 @@ package com.assistant.speech.Listeners;
 
 public interface Listener 
 {
-	public String listen();
+	public String listenForASinglePhrase();
 }
